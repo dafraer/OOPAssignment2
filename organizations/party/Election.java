@@ -8,5 +8,35 @@ public class Election {
 
     private boolean fair;
 
+    public Election(int votersNumber, boolean fair, String description) {
+        this.votersNumber = votersNumber;
+        this.fair = fair;
+        this.description = description;
+    }
+
     private String description;
+
+    public int getVotersNumber() {
+        return votersNumber;
+    }
+
+    public void setVotersNumber(int votersNumber) {
+        this.votersNumber = votersNumber;
+    }
+
+    public boolean isFair() {
+        return fair;
+    }
+
+    public void setFair(boolean fair) {
+        this.fair = fair;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
